@@ -6,7 +6,6 @@ body{
 }
  
 main{
-    width: 1200px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -23,17 +22,20 @@ a{
 }
  
 header{
-    background-color: #023E8A;
-    height: auto;
-    border-radius: 30px;
-    margin: 10px;
-        box-shadow: 0px 0px 10px 1px #023E8A;
-}
- 
-header p{
+    display: flex;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #023E8A;
+    height: 80px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 1px #023E8A;
+}
+ 
+header p{
+    margin: 0px;
     font-family: 'Inria Serif', serif;
 }
  
@@ -85,4 +87,59 @@ nav{
     display: flex;
     width: auto;
     height: 200px;
+    margin: 20px;
+}
+ 
+#keszsegek{
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#keszsegek img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+ 
+#kartya{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: #F8F3DF;
+    width: 15%;
+    height: 200px;
+    border-radius: 15px;
+}
+ 
+#kartya p{
+    color: #023E8A;
+    font: italic bold 20px Arial, sans-serif;
+}
+ 
+#navigacio:hover {
+    width: 19%;
+    transition: 0.1s;
+}
+ 
+#kartya:hover {
+    width: 16%;
+    height: 210px;
+    transition: 0.6s;
+    box-shadow: 0px 0px 20px 4px #023E8A;
+}
+
+@media (max-width: 800px){
+    main{
+        background-color: #CAF0F8;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
 }
