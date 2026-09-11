@@ -1,9 +1,13 @@
 body{
     background-color: #03045E;
-    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
  
 main{
+    width: 1200px;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -59,4 +63,26 @@ nav{
     align-items: center;
     justify-content: center;
     border-radius: 30px;
+}
+ 
+#bemutatkozas{
+    background-color: #023E8A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 0px 0px 10px 1px #023E8A;
+}
+ 
+#bemutatkozas img{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+}
+ 
+#bemutatkozas p{
+    display: flex;
+    width: auto;
+    height: 200px;
 }
