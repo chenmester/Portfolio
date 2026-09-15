@@ -132,6 +132,32 @@ nav{
     box-shadow: 0px 0px 20px 4px #023E8A;
 }
 
+#projekt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0077B6;
+    margin: 10px;
+}
+
+#leiras{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#kepek{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+#leiras img{
+    width: 200px;
+    height: 200px;
+}
+
 @media (max-width: 800px){
     main{
         background-color: #CAF0F8;
