@@ -1,53 +1,74 @@
 body{
-    background-color: #03045E;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #000000;
+    margin: auto;
+    max-width: 1200px;
 }
  
 main{
-    justify-content: center;
+    background-color: #03045E;
+    width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
  
+/*betutipus*/
 p{
     color: #CAF0F8;
     font: bold 20px 'Inria Serif', serif;
+    margin: 0px;
 }
  
+/*linkek*/
 a{
     text-decoration: none;
 }
  
-header{
+/*Hover*/
+#navigacio:hover{
+    width: 32%;
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px 4px #023E8A;
+}
+ 
+#kartya:hover {
+    width: 16%;
+    height: 210px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px 4px #023E8A;
+}
+ 
+/*header*/
+header {
+    width: 90%;
+    min-height: 80px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
-    display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #023E8A;
-    height: 80px;
-    margin: 10px;
     border-radius: 30px;
     box-shadow: 0px 0px 10px 1px #023E8A;
 }
  
-header p{
-    margin: 0px;
+header p {
+    margin: 0;
     font-family: 'Inria Serif', serif;
+    text-align: center;
 }
+/*header vege*/
  
+ 
+/*Nav*/
 nav{
-    margin: auto;
     background-color: #0096C7;
-    width: 90%;
+    width: 80%;
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     border-radius: 10px;
 }
  
@@ -57,38 +78,36 @@ nav{
  
 #navigacio{
     background-color: #FFFCF7;
+    width: 30%;
+    height: 12px;
     padding: 10px;
     margin: 10px;
-    width: 200px;
-    height: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
 }
+/*Nav vege*/
  
-#bemutatkozas{
+/*Bemutatkozas*/
+#bemutatkozas {
+    width: 90%;
+    display: flex;
     background-color: #023E8A;
     border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 20px;
     box-shadow: 0px 0px 10px 1px #023E8A;
+    padding: 20px;
+    gap: 20px;
 }
  
-#bemutatkozas img{
-    margin: 20px;
+#bemutatkozas img {
     width: 200px;
     height: 200px;
+    object-fit: cover;
 }
  
-#bemutatkozas p{
-    display: flex;
-    width: auto;
-    height: 200px;
-    margin: 20px;
-}
+/*Bemutatkozas vege*/
+ 
  
 #keszsegek{
     display: flex;
@@ -96,11 +115,13 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 100%;
 }
-
+ 
+/*keszseg*/
 #keszsegek img{
-    width: 100px;
-    height: 200px;
+    width: 190%;
+    height: 150px;
     object-fit: contain;
 }
  
@@ -110,8 +131,10 @@ nav{
     align-items: center;
     margin: 5px;
     background-color: #F8F3DF;
-    width: 140px;
-    height: 300px;
+    width: 15%;
+    height: 200px;
+    border-bottom: solid 2px lightblue;
+    border-right: solid 2px lightblue;
     border-radius: 15px;
 }
  
@@ -119,45 +142,37 @@ nav{
     color: #023E8A;
     font: italic bold 20px Arial, sans-serif;
 }
+/*keszeg vege*/
  
-#navigacio:hover {
-    width: 25%;
-    transition: 0.1s;
-}
- 
-#kartya:hover {
-    width: 210px;
-    height: 310px;
-    transition: 0.6s;
-    box-shadow: 0px 0px 20px 4px #023E8A;
-}
-
+/*projekt*/
 #projekt{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
     background-color: #0077B6;
-    margin: 10px;
+    width: 95%;
+    border-radius: 15px;
+    padding: 15px;
 }
-
+ 
 #leiras{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-
+ 
 #kepek{
     display: flex;
-    flex-direction: row;
-    gap: 70px;
+    gap: 100px;
 }
-
+ 
 #leiras img{
     width: 200px;
     height: 200px;
 }
-
+/*projekt vege*/
+ 
 /*kapcsolat*/
 #kapcsolat{
     display: flex;
@@ -193,7 +208,7 @@ nav{
     color: #000000;  
 }
 /*kapcsolat vege*/
-
+ 
 /*footer*/
 footer{
     display: flex;
@@ -202,6 +217,7 @@ footer{
     width: 100%;
     height: 150px;
     background-color: #0096C7;
+ 
 }
  
 h1{
@@ -209,15 +225,151 @@ h1{
     font: bold 20px 'Inria Serif', serif;
 }
 /*footer vege*/
-
+ 
+#mobilnezet{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+ 
+/*resposive*/
 @media (max-width: 800px){
-    main{
-        background-color: #CAF0F8;
+    header{
+        width: 95%;
     }
-
+ 
     nav{
         display: flex;
         flex-direction: column;
         height: auto;
+    }
+ 
+    #navigacio{
+        width: 91%;
+    }
+ 
+    #keszsegek{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 20px;
+    }
+ 
+    #keszsegek img{
+        width: 210%;
+        height: 300px;
+    }
+ 
+    #kartya{
+        width: 95%;
+        height: auto;
+    }
+ 
+    #projekt{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+ 
+    #kepek{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+ 
+    #bemutatkozas {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+ 
+    #kapcsolat{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+ 
+    #eleresek{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+ 
+    #eleres{
+        display: flex;
+    }
+ 
+    #navigacio:hover{
+        width: 92%;
+        transition: 0.5s;
+        box-shadow: 0px 0px 20px 4px #023E8A;
+    }
+ 
+    #kartya:hover {
+        width: 98%;
+        height: auto;
+        transition: 0.6s;
+        box-shadow: 0px 0px 20px 4px #023E8A;
+    }
+ 
+    #mobilnezet{
+        display: flex;
+        flex-direction: row;
+    }
+ 
+    footer{
+        margin-right: 20px;
+        margin-bottom: 20px;
+        height: auto;
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 510px) {
+    #keszsegek img{
+        width: auto;
+        height: 150px;
+    }
+
+    #navigacio:hover{
+        width: 90%;
+        transition: 0.5s;
+        box-shadow: 0px 0px 20px 4px #023E8A;
+    }
+ 
+    #kartya:hover {
+        width: 95%;
+        height: auto;
+        transition: 0.6s;
+        box-shadow: 0px 0px 20px 4px #023E8A;
+    }
+    #navigacio{
+        margin: 5px;
+        width: 90%;
+    }
+
+    #bemutatkozas{
+        width: 80%;
+    }
+
+    #mobilnezet{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #kapcsolat{
+        margin: 0;
+        padding: 0;
+    }   
+
+    footer{
+        margin: 0;
+        padding: 0;
     }
 }
