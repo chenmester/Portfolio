@@ -158,7 +158,57 @@ nav{
     height: 200px;
 }
 
+/*kapcsolat*/
+#kapcsolat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #023E8A;
+    width: 100%;
+    height: 120px;
+    min-height: 50px;
+    gap: 40px;
+    padding-top: 20px;
+}
+ 
+#eleresek{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+ 
+#eleres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFCF7;
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+}
+ 
+#eleres p{
+    color: #000000;  
+}
+/*kapcsolat vege*/
 
+/*footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #0096C7;
+}
+ 
+h1{
+    color: #CAF0F8;
+    font: bold 20px 'Inria Serif', serif;
+}
+/*footer vege*/
 
 @media (max-width: 800px){
     main{
